@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body page__body--main">
+    <div class="site-container">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero__title">
+              <span>Сокращайте</span>
+              <span
+                >ваши
+                <img src="./img/url.svg" aria-hidden="true" alt="" /> URL</span
+              >
+              <span>БЕСПЛАТНО</span>
+            </h1>
+
+            <form action="#" class="hero__url">
+              <label class="hero__label">
+                <input
+                  type="text"
+                  placeholder="Вставьте ссылку сюда"
+                  name="url"
+                  class="hero__input"
+                />
+                <div class="hero__text">Кастомная</div>
+              </label>
+              <button class="hero__btn btn-reset">Сократить</button>
+            </form>
+            <div class="hero__from">
+              <img src="./img/from.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="benefits">
+          <div class="container">
+            <h2 class="title2 benefits__title">пОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+            <div class="benefits__container">
+              <div class="benefits__item b-item">
+                <h5 class="b-item__title">Простота использования</h5>
+                <p class="desc1 b-item__desc">
+                  Сократите любую ссылку в один клик - просто вставьте её и
+                  нажмите кнопку сокращения.
+                </p>
+                <div class="b-item__bottom">
+                  <div class="b-item__icon">
+                    <img src="./img/icons/01.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="benefits__item b-item">
+                <h5 class="b-item__title">Бесплатно для всех</h5>
+                <p class="desc1 b-item__desc">
+                  Этот сервис полностью бесплатный, вам не нужно платить за его
+                  использование.
+                </p>
+                <div class="b-item__bottom">
+                  <div class="b-item__icon">
+                    <img src="./img/icons/02.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="benefits__item b-item">
+                <h5 class="b-item__title">Кастомные URL</h5>
+                <p class="desc1 b-item__desc">
+                  Создавайте короткие ссылки с вашим собственным URL, делайте их
+                  запоминающимися и удобными.
+                </p>
+                <div class="b-item__bottom">
+                  <div class="b-item__icon">
+                    <img src="./img/icons/03.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="benefits__item b-item">
+                <h5 class="b-item__title">Сколько угодно ссылок</h5>
+                <p class="desc1 b-item__desc">
+                  Неважно, какая это ссылка. Сокращайте любые ссылки без
+                  ограничений!
+                </p>
+                <div class="b-item__bottom">
+                  <div class="b-item__icon">
+                    <img src="./img/icons/04.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="benefits__item b-item">
+                <h5 class="b-item__title">Защита от ботов</h5>
+                <p class="desc1 b-item__desc">
+                  Защитите свои ссылки от вредоносных ботов с помощью наших
+                  сокращенных ссылок.
+                </p>
+                <div class="b-item__bottom">
+                  <div class="b-item__icon">
+                    <img src="./img/icons/05.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="benefits__item b-item">
+                <h5 class="b-item__title">Никогда не удаляются</h5>
+                <p class="desc1 b-item__desc">
+                  Ваши сокращенные ссылки никогда не будут удалены с нашего
+                  сервера, пока наш сервис доступен.
+                </p>
+                <div class="b-item__bottom">
+                  <div class="b-item__icon">
+                    <img src="./img/icons/06.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

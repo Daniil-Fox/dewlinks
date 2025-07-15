@@ -1,0 +1,16 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Gotham Pro", sans-serif;
+  --content-width: 1330px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --siniy: #0039ff;
+  --belyy: #fff;
+  --chernyy: #1d1d1d;
+  --svetlo-siniy: #436dff;
+  --seryy: #989898;
+  --zheltyy: #ffc750;
+  --krasnyy: #ff5353;
+  --zelenyy: #e1fec6;
+}

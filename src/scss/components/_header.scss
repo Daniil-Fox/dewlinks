@@ -1,0 +1,25 @@
+.header {
+  padding: 14px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    height: 50px;
+    width: auto;
+
+    @include small-tablet {
+      height: 40px;
+    }
+    @include mobile {
+      height: 32px;
+    }
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}

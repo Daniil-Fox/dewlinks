@@ -1,0 +1,159 @@
+.hero {
+  padding: 17vh 0;
+  @include tablet {
+    padding: 5vh 0;
+  }
+  @include mobile {
+    padding: 124px 0;
+  }
+  &__from {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      display: block;
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--belyy);
+    @include tablet {
+      font-size: 90px;
+    }
+    @include small-tablet {
+      font-size: 60px;
+    }
+    @include mobile {
+      font-size: 42px;
+    }
+    img {
+      display: inline-block;
+      height: 100px;
+      aspect-ratio: 1 / 1;
+      @include tablet {
+        height: 80px;
+      }
+      @include small-tablet {
+        height: 50px;
+      }
+      @include mobile {
+        height: 35px;
+      }
+    }
+    span {
+      display: block;
+
+      &:nth-child(2) {
+        text-align: center;
+      }
+      &:nth-child(3) {
+        text-align: right;
+      }
+    }
+  }
+
+  &__url {
+    display: flex;
+    border-radius: 24px;
+    overflow: hidden;
+
+    @include small-tablet {
+      border-radius: 18px;
+    }
+  }
+
+  &__label {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background: var(--belyy);
+    padding: 12px 24px;
+    height: 62px;
+
+    @include small-tablet {
+      height: 52px;
+      padding: 10px;
+    }
+    @include mobile {
+      height: 40px;
+    }
+  }
+
+  &__input {
+    flex-grow: 1;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 20px;
+    color: #868686;
+    @include small-tablet {
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+    &:focus {
+      outline: none;
+      color: #000;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 32px;
+    background: var(--chernyy);
+
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--belyy);
+
+    @include small-tablet {
+      font-size: 16px;
+      padding: 5px 12px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+
+    padding: 0px 32px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #868686;
+    position: relative;
+    @include small-tablet {
+      font-size: 16px;
+      padding: 5px 12px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      width: 1px;
+      height: 100%;
+      background-color: #ddd;
+      border-radius: 10px;
+    }
+  }
+}
