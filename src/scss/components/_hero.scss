@@ -13,7 +13,7 @@
 
     img {
       display: block;
-      height: 30px;
+      height: 40px;
       width: auto;
       object-fit: contain;
     }
@@ -131,19 +131,15 @@
 
   &__text {
     display: inline-block;
-
-    padding: 0px 32px;
-    font-weight: 300;
-    font-size: 20px;
-    color: #868686;
     position: relative;
-    @include small-tablet {
-      font-size: 16px;
-      padding: 5px 12px;
-    }
-    @include mobile {
-      font-size: 12px;
-    }
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s,
+      background 0.3s;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0 20px;
+    max-width: 20%;
+    transition: max-width 0.3s ease-in;
     &::before {
       content: "";
       position: absolute;
@@ -154,6 +150,39 @@
       height: 100%;
       background-color: #ddd;
       border-radius: 10px;
+    }
+    &.hero__text--active {
+      max-width: 40%;
+      cursor: text;
+      z-index: 10;
+    }
+  }
+  &__text-input {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    color: #868686;
+    border: none;
+    background: transparent;
+    border-radius: 12px;
+    outline: none;
+    transition: color 0.3s, background 0.3s;
+    width: 100%;
+    cursor: pointer;
+    @include small-tablet {
+      font-size: 16px;
+      padding: 5px 12px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+    &:not([disabled]) {
+      cursor: text;
+    }
+    &:focus {
+      color: #000;
+      background: none;
+      outline: none;
     }
   }
 }

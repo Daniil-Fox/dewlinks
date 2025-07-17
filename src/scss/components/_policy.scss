@@ -49,11 +49,15 @@
         line-height: 120%;
       }
     }
-
+    p {
+      margin: 0;
+    }
     ul {
       list-style: none;
       padding-left: 20px;
-
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
       li {
         &::before {
           content: "-";
