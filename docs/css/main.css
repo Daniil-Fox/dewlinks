@@ -313,7 +313,7 @@ a {
 }
 .hero__from img {
   display: block;
-  height: 40px;
+  height: 60px;
   width: auto;
   -o-object-fit: contain;
   object-fit: contain;
